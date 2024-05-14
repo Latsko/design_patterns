@@ -1,4 +1,4 @@
-package builder;
+package builder.builder1;
 
 //Interface implemented by "products"
 public interface UserDTO {
