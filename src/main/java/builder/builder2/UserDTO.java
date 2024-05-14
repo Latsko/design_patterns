@@ -5,6 +5,10 @@ import builder.Address;
 import java.time.LocalDate;
 import java.time.Period;
 
+// More popular implementation, due to its simplicity and
+// convenience as we have builder inside the class whose object
+// we are going to build.
+
 //Product class
 public class UserDTO {
 

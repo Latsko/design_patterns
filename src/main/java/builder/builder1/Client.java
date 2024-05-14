@@ -5,7 +5,11 @@ import builder.User;
 
 import java.time.LocalDate;
 
-//This is our client which also works as "director"
+// This is our client which also works as "director"
+// Client creates director, initiates the construction process and provides the inputs.
+// Director is responsible for coordinating the construction process.
+// And as we can see here, it can be done in one place in simple programs,
+// so it's pretty common that client and director may be combined in the same class.
 public class Client {
 
 	public static void main(String[] args) {

@@ -6,7 +6,6 @@ import java.time.LocalDate;
 import java.time.Period;
 
 //The concrete builder for UserWebDTO
-//TODO implement builder
 public class UserWebDTOBuilder implements UserDTOBuilder {
 
     private String firstName;
