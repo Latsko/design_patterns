@@ -5,7 +5,7 @@ import builder.Address;
 import java.time.LocalDate;
 import java.time.Period;
 
-//The concrete builder for UserWebDTO
+// The concrete builder for UserWebDTO
 public class UserWebDTOBuilder implements UserDTOBuilder {
 
     private String firstName;
@@ -36,13 +36,13 @@ public class UserWebDTOBuilder implements UserDTOBuilder {
     @Override
     public UserDTOBuilder withAddress(Address address) {
         this.address = address.getHouseNumber() + ", " + address.getStreet() +
-        "\n" + address.getCity() + "\n" + address.getState() + "\n" + address.getZipcode();
+                "\n" + address.getCity() + "\n" + address.getState() + "\n" + address.getZipcode();
         return this;
     }
 
     @Override
     public UserDTO build() {
-        dto = new UserWebDTO(firstName+lastName, age, address);
+        dto = new UserWebDTO(firstName + lastName, age, address);
         return dto;
     }
 

@@ -7,7 +7,7 @@ import java.time.LocalDate;
 // This approach is applied in case the product has multiple different definitions
 // for example it has an inheritance hierarchy
 
-//Abstract builder
+// Abstract builder
 public interface UserDTOBuilder {
     //methods to build "parts" of product at a time
     UserDTOBuilder withFirstName(String fname);

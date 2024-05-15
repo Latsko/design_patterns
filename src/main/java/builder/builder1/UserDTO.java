@@ -1,11 +1,11 @@
 package builder.builder1;
 
-//Interface implemented by "products"
+// Interface implemented by "products"
 public interface UserDTO {
-	
-	String getName();
 
-	String getAddress();
+    String getName();
 
-	String getAge();
+    String getAddress();
+
+    String getAge();
 }

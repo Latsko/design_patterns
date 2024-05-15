@@ -9,7 +9,7 @@ import java.time.Period;
 // convenience as we have builder inside the class whose object
 // we are going to build.
 
-//Product class
+// Product class
 public class UserDTO {
 
     private String name;
