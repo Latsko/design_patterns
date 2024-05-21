@@ -6,7 +6,7 @@ import java.util.List;
 //Composite in the composite pattern
 public class Directory extends File {
 
-    private List<File> childern = new ArrayList<>();
+    private List<File> children = new ArrayList<>();
 
     public Directory(String name) {
         super(name);
@@ -15,22 +15,22 @@ public class Directory extends File {
     @Override
     public void ls() {
         System.out.println(getName());
-        childern.forEach(File::ls);
+        children.forEach(File::ls);
     }
 
     @Override
     public void addFile(File file) {
-        childern.add(file);
+        children.add(file);
     }
 
     @Override
     public File[] getFiles() {
-        return childern.toArray(new File[childern.size()]);
+        return children.toArray(new File[children.size()]);
     }
 
     @Override
     public boolean removeFile(File file) {
-        return childern.remove(file);
+        return children.remove(file);
     }
 
 }
